@@ -2,7 +2,7 @@ export function generatedHeader() {
     return `
         <header class="header flex justify-between  items-center p-4 md:p-[5px_15px] shadow-2xl z-50 ">
             <div class="logo">
-                <img src="./images/secondaryLogo 1 (1).png" alt="logo">
+                <img src="src/images/secondaryLogo 1 (1).png" alt="logo">
             </div>
              
             <nav id="mobile-menu" class="md:flex justify-evenly md:items-center  w-full md:w-auto absolute md:relative top-14 md:top-0 gap-2 left-0 flex-col md:flex-row z-50 text-center shadow-2xl bg-white sm:bg-transparent rounded-[0_0_.6rem_.6rem] max-h-0 overflow-hidden transition-[max-height] md:max-h-none duration-300 ease-in-out ">

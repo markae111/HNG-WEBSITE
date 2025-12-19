@@ -9,39 +9,39 @@ heads.mobileHeader()
 
 // creating the objects for the various learning paths
 const paths = [{
-    image: '././images/high-angle-designer-holding-smartphone 1.png',
+    image: './src/images/high-angle-designer-holding-smartphone 1.png',
     pathName: 'UI/UX',
     blog: ' Learn the principles of user-centred design, visual hierarchy, and prototyping. Develop skills in tools like Figma and gain an understanding of how design shapes user experience',
     aos: 'fade-right',
     delay: 0
     //aosDuration: 900 
 }, {
-    image: '././images/programming.png',
-    pathName: '../../images/💻 Frontend Development.png',
+    image: './src/images/programming.png',
+    pathName: './src/images/💻 Frontend Development.png',
     blog: 'Learn the foundations of continuous integration, deployment, and automation.',
     aos: 'fade-right',
     delay: 100
 }, {
-    image: '././images/image 6.png',
-    pathName: '../../images/⚙️ Backend Development.png',
+    image: './src/images/image 6.png',
+    pathName: './src/images/⚙️ Backend Development.png',
     blog: 'Learn to build secure, scalable applications while understanding how data and systems work behind the scenes.',
     aos: 'fade-right',
     delay: 200
 }, {
-    image: '././images/high-angle-people-working-office 1 (1).png',
-    pathName: '../../images/📱 Product Management.png',
+    image: './src/images/high-angle-people-working-office 1 (1).png',
+    pathName: './src/images/📱 Product Management.png',
     blog: 'Understand how to define product goals, manage roadmaps, and coordinate teams to bring tech ideas to market effectively.',
     aos: 'fade-right',
     delay: 300
 }, {
-    image: '././images/image 5.png',
-    pathName: '../../images/🧩 DevOps & Cloud.png',
+    image: './src/images/image 5.png',
+    pathName: './src/images/🧩 DevOps & Cloud.png',
     blog: 'Learn the foundations of continuous integration, deployment, and automation. Get familiar with tools that help developers ship better, faster, and more reliably.',
     aos: 'fade-right',
     delay: 400
 }, {
-    image: '././images/it-professional-updating-ai-systems 1.png',
-    pathName: '../../images/📊 Data Analysis.png',
+    image: './src/images/it-professional-updating-ai-systems 1.png',
+    pathName: './src/images/📊 Data Analysis.png',
     blog: 'Gain practical skills in data cleaning, visualization, and interpretation. Learn how to use data to make informed product and business decisions',
     aos: 'fade-right',
     delay: 500
@@ -63,7 +63,7 @@ paths.forEach((path) => {
                 </div>
                 <div>
                     <h1><img src="${path.pathName}" alt=""></h1>
-                    <p class="text-gray-500 mb-8 grow dark:text-gray-300">
+                    <p class="text-gray-500 mb-9 grow dark:text-gray-300 ">
                        ${path.blog}
                     </p>
                     <a href="#" class="learn-more border-2 dark:border-white rounded-sm p-[2px_3rem] grid text-center dark:text-gray-300 hover:scale-102">Learn more</a>
