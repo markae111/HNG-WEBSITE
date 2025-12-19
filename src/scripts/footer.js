@@ -10,7 +10,7 @@ export function getFooter(){
                 </div>
 
                 <div data-aos="zoom-in-right" data-aos-duration="900">
-                    <img src="../images/unnamed-removebg-preview 1.png" alt="">
+                    <img src="./images/unnamed-removebg-preview 1.png" alt="">
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@ export function getFooter(){
         <footer class= "p-4 xl:p-[3rem_6rem] bg-[rgba(8,108,147,1)] text-white">
             <div class="flex justify-between flex-col lg:flex-row gap-8 mb-4 lg:mb-30 p-9">
                 <div class="logo">
-                    <img src="../images/secondaryLogo 1 (1).png" alt="logo">
+                    <img src="./images/secondaryLogo 1 (1).png" alt="logo">
                 </div>
                 <div>
                     <p>Support</p>
