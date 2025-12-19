@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/style.css" rel="stylesheet">
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            const systemDark =  window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (theme === 'dark' || (!theme && systemDark)) {
+                document.documentElement.classList.add('dark')
+            }else{
+                document.documentElement.classList.remove('dark')
+            }
+        })()
+    </script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- LINK TO AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <header class="header sticky top-0 z-50 bg-white rounded-[0_0_.6rem_.6rem]"></header>
+
+    <section class="dark:bg-gray-950">
+        <section class="bg-sky-600 dark:bg-sky-950 p-4 lg:p-[1rem_6rem] flex flex-col justify-between md:flex-row text-white rounded-b-2xl" >
+            <div class="lg:max-w-[600px]">
+                <div class="mb-10 mt-15" data-aos="fade-down">
+                    <h1 class="md:w-[700px] font-bold text-[43px] sm:text-[60px] mb-13 text-white dark:text-white">
+                        A second chance to Learn, Grow, and Build Your Future in Tech
+                    </h1>
+                    <p class="">
+                        Didn't finish the HNG Internship? Don't worry — your journey doesn't have tend. HNG Learn gives
+                        you the structure,
+                        mentorship, and community you need to keep learning, build real skills, and return stronger in your tech career.
+                    </p>
+                </div>
+
+                <div class="mb-4 flex justify-between">
+                    <div class="pt-10"  data-aos="fade-right">
+                        <a href="startnow.html" class="text-sky-400 bg-white text-center p-2 block rounded-sm w-[150px] shadow-md shadow-black ">
+                            Start Now
+                        </a>
+                    </div>
+                    
+                    <img src="../images/learn-hero 1.png" alt="" class="lg:h-[450px] w-[150px] lg:hidden" data-aos="fade-right">
+                    
+                </div>
+                <p class="sm-hidden">
+                    Continue your journey - one lesson at a time
+                </p>
+               
+            </div>
+
+            <div class="hidden lg:block">
+                <img  src="../images/learn-hero 1.png" alt="" class="sm:h-[450px]  ">
+            </div>
+           
+
+        </section>
+
+        <section class="p-4 lg:p-[3rem_6rem]  bg-white dark:bg-gray-900" id="about">
+            <div class="mb-15 md:mb-30">
+                <h1 class="md:w-[700px] font-bold text-[30px] text-black dark:text-white">What HNG Learn is All About</h1>
+                <p class="text-gray-600 dark:text-gray-400">Discover how HNG learn helps beginners and interns keep growing beyond the internship</p>
+            </div>
+
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-7 md:gap-20 lg-[200px] shadow-[0_0_8px] p-3 shadow-gray-700 md:shadow-none rounded-2xl mb-7" data-aos="fade-right" data-aos-duration="900">
+                <div class=" lg:w-1/2">
+                    <h1 class="font-bold text-[30px] dark:text-white">
+                        Purpose
+                    </h1>
+                    <p class="text-gray-600 dark:text-gray-400" >
+                        HNG Learn is a dedicated learning initiative designed to help interns and beginners in tech continue their growth
+                        journey after the main HNG Internship. It provides a structured environment where learners can revisit the basics,
+                        strengthen their skills, and rebuild confidence at their own pace.
+                    </p>
+                    <span id="" class="text-gray-600 dark:text-gray-400 hidden md:block moreContent">
+                        Beyond just reviewing concepts, the platform focuses on closing the skill gaps that often emerge during intensive,
+                        fast-paced programs. This is achieved through carefully curated modules, guided projects, and focused remedial content
+                        that ensures a solid understanding of core principles before moving on to advanced topics. The ultimate purpose is to
+                        transition learners from having theoretical knowledge to possessing job-ready, applied skills that lead to meaningful
+                        employment and career advancement in the global tech ecosystem.
+                    </span><br>
+                    <button id="read-more-btn" class="font-black md:hidden read-more-btn dark:text-white">Read-More</button>
+                </div>
+
+                <div data-aos="slide-right">
+                    <img src="../images/server-room-colleagues-use-artificial-intelligence-perform-computing-tasks 1.png" alt="" class="h-[300px] w-[500px] rounded-sm ">
+                </div>
+            </div>
+        </section>
+
+        <section class="p-4 lg:p-[3rem_6rem]  bg-white dark:bg-gray-900">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-7 md:gap-20 lg-[200px] shadow-[0_0_8px] p-3 shadow-gray-700 md:shadow-none rounded-2xl mb-7"
+            data-aos="fade-right" data-aos-duration="900">
+                <div class=" lg:w-1/2">
+                    <h1 class="font-bold text-[30px] dark:text-white">
+                        Beneficiaries
+                    </h1>
+                    <p class="text-gray-600 dark:text-gray-200 font-bold">
+                        HNG Learn is for:
+                        <li class="text-gray-600 dark:text-gray-400">
+                            <strong>Interns who exited during the early or group stages of the HNG Internship:</strong> This is the primary group. HNG Learn offers a
+                            safety net and a direct path to re-engagement. It breaks down the
+                            comprehensive curriculum into manageable chunks, helping these individuals master the foundational knowledge they may
+                            have missed or struggled with in the high-pressure environment of the main internship.
+                        </li>
+                        <span id="" class="text-gray-600 hidden md:block moreContent">
+                            <li class="text-gray-600 dark:text-gray-400">
+                                <strong>Beginners in tech looking for a structured way to learn the fundamentals:</strong> For those new to the field, HNG Learn acts as
+                                an essential boot camp. It eliminates the confusion of sifting through countless online resources by providing a clear roadmap across various disciplines (like frontend, backend, and
+                                product design).
+                            </li>
+                            <li class="text-gray-600 dark:text-gray-400">
+                                <strong>Anyone who wants to stay connected to the HNG community while improving their skills:</strong> Tech is constantly evolving. Even
+                                experienced individuals can benefit from the platform's focus on emerging technologies
+                                and best practices.  
+                            
+                            </li> 
+                        </span><br>
+                        <button id="read-more-btn" class="font-black md:hidden read-more-btn dark:text-white">Read-More</button>
+                        
+                    </p>
+                </div>
+            
+                <div data-aos="slide-right">
+                    <img src="../images/startup-engineers-leveraging-artificial-intelligence-tech-workspace 1.png" alt=""
+                        class="h-[300px] w-[500px] rounded-sm">
+                </div>
+            </div>
+        </section>
+
+        <section class="p-4 lg:p-[3rem_6rem] bg-white dark:bg-gray-900">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-7 md:gap-20 lg-[200px] shadow-[0_0_8px] p-3 shadow-gray-700 md:shadow-none rounded-2xl mb-7"
+            data-aos="fade-right" data-aos-duration="900">
+                <div class="lg:w-1/2">
+                    <h1 class="font-bold text-[30px] dark:text-white">
+                        The Goal
+                    </h1>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Our mission is simple — to give every aspiring techie a second chance to learn, grow, and thrive. With HNG Learn, you’re
+                        not starting over; you're continuing stronger, eqiped with right tools and community support, we believe that passion and potential should never be blocked by a single setback.
+                    </p>
+                    <span id="" class="text-gray-600 dark:text-gray-400 hidden md:block moreContent">
+                        Our curriculum is built around practical, real-world skills that employers demand. it's not just about watching videos; it's about applied learning, working on actual projects, and receiving direct, actionable feedback from seasoned developers and designers. this ensures thta every hour you invest translates directly into career progress. 
+                    </span><br>
+                    <button id="read-more-btn" class="font-black md:hidden read-more-btn dark:text-white">Read-More</button>
+                </div>
+            
+                <div data-aos="slide-right">
+                    <img src="../images/people-working-marketing-agency(1) 1.png" alt=""
+                        class="h-[300px] w-[500px] rounded-sm">
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPLORE MORE COURSES SECTION -->
+        <div class="explore-more p-4 md:p-[3rem_6rem] dark:text-white animate-fade" data-aos="zoom-in">
+            <a href="courses.html" class="text-2xl font-extrabold" title="CLICK ME">EXPLORE AVAILABLE COURSES</a>
+        </div>
+        <footer class="footer"></footer>
+    </section>
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
+</body>
+
+
+</html>
