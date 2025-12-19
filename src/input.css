@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* this is for darkmode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --animate-fade: fade 1s ease-in-out infinite;
+
+    @keyframes fade {
+        0% { 
+            transform: scale(0.95)
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1)
+        }
+    }
+    
+} 

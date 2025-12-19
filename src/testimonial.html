@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+          (function () {
+                const theme = localStorage.getItem('theme');
+                const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (theme === 'dark' || (!theme && systemDark)) {
+                    document.documentElement.classList.add('dark')
+                } else {
+                    document.documentElement.classList.remove('dark')
+                }
+            })()
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LINK TO AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="dark:bg-gray-900">
+    <header class="header sticky top-0 bg-white z-500"> </header>
+
+    <div class="p-6 lg:p-[3rem_6rem]">
+        <h1 class="font-bold text-[30px] dark:text-gray-300">Real Stories, Real Growth</h1>
+        <p class="text-gray-500 dark:text-gray-400">Real Voices, Real Growth. See how others found their way back into tech through HNG learn.</p>
+    </div>
+
+    <div class="testimonial-container p- sm:p-[3rem_6rem] grid grid-cols-1 md:grid-cols-2 justify-center items-center m-4 md:gap-10 relative mb-15">
+        <div class="testimonial-box block p-3 rounded-2xl shadow-2xl dark:shadow-[0_5px_10px_-3px] dark:shadow-gray-200 md:flex flex-col justify-between h-[310px] sm:h-full w-full">
+            <div class="mb-9">
+                <h1 class="font-bold text-3xl pb-5 dark:text-gray-300">Awesome</h1>
+                <p class="grow text-gray-500 dark:text-gray-400">
+                    <em>“I dropped out of the internship during the group stage and honestly thought that was it for me. Then I found HNG Learn.
+                    The lessons were simple, the mentors were patient, and it helped me rebuild my confidence one step at a time.</em>
+                </p>
+            </div>
+
+            <div class="flex gap-3 dark:text-gray-200">
+                <div>
+                    <img src="../images/Avatar.png" alt="1st testimonial">
+                </div>
+                <div>
+                    <h1>James K.</h1>
+                    <p>FrontEnd Track</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="testimonial-box hidden p-3 rounded-2xl shadow-2xl dark:shadow-[0_5px_10px_-3px] dark:shadow-gray-200 md:flex  flex-col justify-between h-[310px] sm:h-full w-full">
+            <div class="mb-9">
+                <h1 class="font-bold text-3xl pb-5 dark:text-gray-300">Superb!</h1>
+                <p class="grow text-gray-500 dark:text-gray-400">
+                    <em>“I joined HNG Learn just to keep learning, but it ended up being so much more. The community kept me motivated, and I
+                    finally started to understand the things I struggled with before. I'm glad I didn't give up.”</em>
+                </p>
+            </div>
+        
+            <div class="flex gap-3 dark:text-gray-200">
+                <div>
+                    <img src="../images/Avatar (1).png" alt="1st testimonial">
+                </div>
+                <div>
+                    <h1>Sarah M.</h1>
+                    <p>Product design Track</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="testimonial-box hidden p-3 rounded-2xl shadow-2xl dark:shadow-[0_5px_10px_-3px] dark:shadow-gray-200 md:flex flex-col justify-between h-[310px] md:h-full w-full">
+            <div class="mb-9">
+                <h1 class="font-bold text-3xl pb-5 dark:text-gray-300">Wonderful!</h1>
+                <p class="grow text-gray-500 dark:text-gray-400">
+                    <em>When I left the internship early, I felt like I’d missed my chance. Joining HNG Learn reminded me that growth doesn’t
+                    have to stop because of one setback. I started small again — one lesson, one project — and now I’m doing things I never
+                    thought I could.”</em>
+                </p>
+            </div>
+        
+            <div class="flex gap-3 dark:text-gray-200">
+                <div>
+                    <img src="../images/IMG_6942.JPG" alt="1st testimonial" class="rounded-full size-13">
+                </div>
+                <div>
+                    <h1>kawedo M.</h1>
+                    <p>Data Analysis Track</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="testimonial-box hidden p-3 rounded-2xl shadow-2xl dark:shadow-[0_5px_10px_-3px] dark:shadow-gray-200 md:flex flex-col justify-between h-[310px] md:h-full w-full">
+            <div class="mb-9">
+                <h1 class="font-bold text-3xl pb-5 dark:text-gray-300">Excellent!!</h1>
+                <p class="grow text-gray-500 dark:text-gray-400">
+                    <em>“I joined HNG Learn just to keep learning, but it ended up being so much more. The community kept me
+                    motivated, and I
+                    finally started to understand the things I struggled with before. I'm glad I didn't give up.”</em>
+                </p>
+            </div>
+        
+            <div class="flex gap-3 dark:text-gray-200">
+                <div>
+                    <img src="../images/learn-hero 1.png" alt="1st testimonial" class="size-14 rounded-full">
+                </div>
+                <div>
+                    <h1>Godfrey O.</h1>
+                    <p>UI/UX Track</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <button id="prev" class="font-black text-3xl absolute -bottom-7 left-30 md:hidden dark:text-white"> < </button>
+        <button id="next" class="font-black text-3xl absolute -bottom-7 right-30 md:hidden dark:text-white"> > </button>
+        
+    </div>
+
+    <footer class="footer"></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./scripts/testimonial.js"></script>
+</body>
+</html>

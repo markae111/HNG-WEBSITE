@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          (function () {
+                const theme = localStorage.getItem('theme');
+                const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (theme === 'dark' || (!theme && systemDark)) {
+                    document.documentElement.classList.add('dark')
+                } else {
+                    document.documentElement.classList.remove('dark')
+                }
+            })()
+    </script>
+    <link href="./style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- LINK TO AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="dark:bg-gray-900">
+    <div id="header" class="bg-white sticky top-0 z-50 rounded-[0_0_.6rem_.6rem]"> </div>
+
+    <div>
+        <div class=" p-4 xl:p-[3rem_6rem] dark:text-gray-300">
+            <h1 class="font-bold text-[30px]">
+                Learning Tracks on HNG Learn!
+            </h1>
+            <p>
+                HNG Learn offers a variety of learning paths designed to help you build a strong foundation in tech.
+            </p>
+            </div>
+    </div>
+    <section class="grid grid-cols-1 m-4 sm:grid-cols-2 min-h-0 gap-7 lg:grid-cols-3 xl:p-[3rem_6rem] path-container "></section>
+
+    <!-- getting the footer function -->
+    <footer class="footer"></footer>
+
+  
+    <!-- <div class="p-[3rem_6rem]">
+        <h1 class="font-bold text-[30px]">Learning Tracks on HNG Learn!</h1>
+        <p>HNG Learn offers a variety of learning paths designed to help you build a strong foundation in tech.</p>
+    </div>
+
+    <section class="grid grid-cols-3 gap-7 p-[3rem_6rem]">
+        <div class="path-box p-3 rounded-2xl  border-3 border-gray-600" >
+            <div class="mb-5">
+                <img src="../images/high-angle-designer-holding-smartphone 1.png" alt="" class="border-4 border-sky-600 rounded-xl">
+            </div>
+            <div class="">
+                <h1><img src="" alt="">Product Design</h1>
+                <p class="text-gray-500 mb-8">
+                    Learn the principles of user-centred design, visual hierarchy, and prototyping. Develop skills in tools like Figma and gain an understanding of how design shapes user experience
+                </p>
+                <a href="#" class="border-2 rounded-sm p-[2px_3rem] grid text-center hover:scale-102">Learn more</a>
+            </div>
+        </div>
+
+        <div class="path-box p-3 rounded-2xl  border-3 border-gray-600">
+            <div class="mb-5">
+                <img src="../images/programming-background-with-person-working-with-codes-computer 1.png" alt="" class="border-4 border-sky-600 rounded-xl">
+            </div>
+            <div>
+                <h1><img src="../images/💻 Frontend Development.png" alt=""></h1>
+                <p class="text-gray-500 mb-17">
+                    Learn the foundations of continuous integration, deployment, and automation.
+                </p>
+                <a href="#" class="border-2 rounded-sm p-[2px_3rem] grid text-center hover:scale-102">Learn more</a>
+            </div>
+        </div>
+
+        <div class="path-box p-3 rounded-2xl  border-3 border-gray-600">
+            <div class="mb-5">
+                <img src="../images/image 6.png" alt="" class="border-4 border-sky-600 rounded-xl">
+            </div>
+            <div>
+                <h1><img src="../images/⚙️ Backend Development.png" alt=""></h1>
+                <p class="text-gray-500 mb-11">
+                    Learn to build secure, scalable applications while understanding how data and systems work behind the scenes.
+                </p>
+                <a href="#" class="border-2 rounded-sm p-[2px_3rem] grid text-center hover:scale-102">Learn more</a>
+            </div>
+        </div>
+    </section> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 0,
+            once: true,
+            mirror: true
+            })
+
+    </script>
+    <script type="module"  src="./scripts/courses.js"></script>
+</body>
+</html>

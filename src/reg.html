@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    label{
+        font-size: 20px;
+    }
+    input{
+        padding: 10px 12px;
+        font-size: 20px;
+
+    }
+     
+</style>
+</head>
+<body class="bg-sky-950">
+    <!-- <div class="bg-sky-800 h-screen w-screen relative rotate-1 p-10"> -->
+        <div class="bg-linear-to-br from-sky-200 via-sky-700 to-sky-200 p-5 md:p-15 m-4 shadow-[inset_0_0_40px_black]">
+            <div class="flex items-center justify-center mb-15">
+                <img src="../images/secondaryLogo 1.png" alt="" class="w-40">
+            </div>
+            <form action="">
+                <section id="account" class="mb-9 flex flex-col gap-10">
+                    
+                        <label for="FullName" id="name" class="font-bold flex flex-col relative">FullName
+                            <input type="text" id="name" class="border-b-2 bg-transparent" autocomplete="additional-name" required>
+                            <i class="fa-solid fa-user absolute right-2 bottom-3"></i>
+                        </label>
+                      
+                        <label for="FullName" class="font-bold flex flex-col relative">Email
+                            <input type="email" class="border-b-2 bg-transparent" placeholder="Janedoe@gmail.com" autocomplete="additional-name"    required>
+                            <i class="fa-solid fa-envelope absolute right-2 bottom-3"></i>
+                        </label>
+                       
+              
+                </section>
+
+                <div class="flex flex-col gap-8 mb-8">
+                    <p class="font-bold">Role(Mentor/Intern)</p>
+                    <label  class="font-bold">
+                        <input type="radio" name="role" value="intern">Intern
+                    </label>
+                    <label  class="font-bold">
+                        <input type="radio" name="role" value="mentor">Mentor
+                    </label>
+                    
+                </div>
+                
+                <div id="internsfield" class="hidden gap-0">
+                   
+                    <label for=""  class="font-bold flex flex-col">Pick a Stack
+                        <select name="" id="" class="border rounded-md">
+                            <option value="" disabled selected></option>
+                            <option value="intern">FrontEnd Development</option>
+                            <option value="mentor">BackEnd Development</option>
+                            <option value="intern">UI/UX</option>
+                            <option value="mentor">Product Management</option>
+                            <option value="intern">DecOps & Cloudcomputing</option>
+                            <option value="mentor">Data Analysis</option>
+                        </select><br><br>
+                    </label>
+
+                    <label for="description"  class="font-bold flex flex-col">Breifly describe our goal
+                        <textarea name="" id="" class="resize-none border rounded-md"></textarea>
+                       
+                    </label>
+                   
+                </div>
+
+                <section id="mentorsfield" class="hidden mb-7">
+                    <label for="name"  class="font-bold flex flex-col gap-3">Current Job Title/Company
+                        <input type="text" class="border rounded-md"><br><br>
+                    </label>
+
+                    <label for="name"  class="font-bold flex flex-col gap-3">Years of Experience
+                        <input type="number" class="border rounded-md"><br><br>
+                    </label>
+                   
+                    <label for="name"  class="font-bold flex flex-col gap-3">Area of Expertise
+                        <input type="text" class="border rounded-md">
+                    </label><br><br>
+
+                    <label for="name"  class="font-bold flex flex-col gap-3">Please provide your Linkdln profile
+                        <input type="url" class="border rounded-md" placeholder="www.Linkdln.com/in/janedoe">
+                    </label>
+                    
+                </section>
+               
+                <section class="flex flex-col gap-3">
+                    <label for="name"  class="font-bold flex flex-col gap-1 relative">Password
+                        <input type="password" class="border rounded-md password" id="password" required minlength="8">
+                        <i class="fa-solid fa-eye-slash absolute right-2 bottom-3"></i>
+                    </label>
+
+                    <label for="name"  class="font-bold flex flex-col gap-2 ">Confirm Password
+                        <input type="password" class="border rounded-md" id="confirm-password" required>
+                    </label>
+                    
+                    <p id="password-error" class="hidden font-bold text-red-700">Passwords do not match.</p>
+
+                    <p id="sucess-message" class="hidden font-bold text-green-500">Sucessfully Registered.</p>
+                    <button type="submit" class="submit-btn bg-blue-950 text-white p-2 rounded-2xl">Register</button>
+                </section>
+                
+               
+                <!-- <label for="name">Input Name</label>n
+                <input type="text" name="" id="name" class="border"> -->
+            </form>
+        </div>
+        <div id="loader" class=" hidden fixed inset-0 flex items-center justify-center bg-sky-200 z-50">
+            <div class="w-20 h-20 border-9 border-t-transparent rounded-full animate-spin"></div>
+        </div>
+    <!-- </div> -->
+    <script src="./scripts/reg.js"></script>
+</body>
+</html>
