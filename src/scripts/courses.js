@@ -16,7 +16,7 @@ const paths = [{
     delay: 0
     //aosDuration: 900 
 }, {
-    image: '../../images/programming-background-with-person-working-with-codes-computer 1.png',
+    image: '../../images/programming.png',
     pathName: '../../images/💻 Frontend Development.png',
     blog: 'Learn the foundations of continuous integration, deployment, and automation.',
     aos: 'fade-right',
